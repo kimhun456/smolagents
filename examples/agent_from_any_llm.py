@@ -17,9 +17,10 @@ chosen_inference = "inference_client"
 print(f"Chose model: '{chosen_inference}'")
 
 if chosen_inference == "inference_client":
-    model = InferenceClientModel(model_id="meta-llama/Llama-3.3-70B-Instruct", provider="nebius")
+    model = InferenceClientModel(model_id="Qwen/Qwen2.5-7B-Instruct", provider="together")
 
 elif chosen_inference == "transformers":
+    # Free local inference. Requires installing the transformers extra and downloading the model weights once.
     model = TransformersModel(model_id="HuggingFaceTB/SmolLM2-1.7B-Instruct", device_map="auto", max_new_tokens=1000)
 
 elif chosen_inference == "ollama":
