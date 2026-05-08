@@ -33,7 +33,7 @@ def build_agent() -> ToolCallingAgent:
 
 def run() -> None:
     agent = build_agent()
-    query = input("Query: ").strip()
+    query = input("질문은 입력해주세요 : ").strip()
     if not query:
         print("No query provided.")
         return

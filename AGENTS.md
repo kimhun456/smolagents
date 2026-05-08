@@ -2,3 +2,4 @@
 - Follow OOP principles
 - Be Pythonic: follow Python best practices and idiomatic patterns
 - Write unit tests for new functionality
+- When you finish implementing, run a reviewer subagent before summarizing.
